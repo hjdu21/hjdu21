@@ -1,0 +1,10 @@
+package step29.exam02;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MemberDao {
+ public List<Member> selectList() {
+   ArrayList<Member> list = new ArrayList<>();
+ }
+}

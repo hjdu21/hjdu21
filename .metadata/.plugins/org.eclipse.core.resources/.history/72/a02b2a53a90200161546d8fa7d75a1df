@@ -1,0 +1,20 @@
+package step32.exam01;
+
+public abstract class CarFactory {
+  
+  
+  private CarFactory() { }
+  
+  static CarFactory instance;
+  
+  public static CarFactory newInstance() {
+    if(instance == null) {
+      instance = new CarFactory();
+    }
+    return instance;
+  }
+  
+  public abstract Car newCar(String name) {
+  
+  }
+}

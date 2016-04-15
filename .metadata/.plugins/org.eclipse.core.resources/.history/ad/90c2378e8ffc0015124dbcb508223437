@@ -1,0 +1,17 @@
+package designpattern.aubstractfactory;
+
+import java.util.Scanner;
+
+public class Game {
+  Scanner keyScan = new Scanner(system.in);
+
+  public void service() trhows Exception {
+    
+  }
+  
+  public static void main(String[] args) {
+    Game game = new Game();
+    game.service();
+  }
+
+}

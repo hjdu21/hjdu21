@@ -1,0 +1,7 @@
+package designpattern.aubstractfactory;
+
+public class Home {
+  String iamge;
+  int defense;
+  int attack;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 내용에 < 을 포함하고 싶으면 XML에 따라 미리 정의된 상수를 이용하라.
+     XML 상수를 "엔티티"라고 부른다.
+     #미리 정의된 XML 엔티티
+     1) < : &lt;     less than
+     2) > : &gt;  	 greater than
+     3) & : &amp;	 ampersand -->
+
+<book>
+	<title>Java programming</title>
+	<content> 
+	<!-- 오류 -->
+	if (a &lt; 10)
+	okok;
+	
+	</content>
+</book>

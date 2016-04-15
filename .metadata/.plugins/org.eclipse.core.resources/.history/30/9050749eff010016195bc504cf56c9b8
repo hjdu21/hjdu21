@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CDATA 섹션
+   => character data 덩어리를 쉽게 표현하기.
+     -->
+
+<book>
+	<title>Java programming</title>
+	<content> 
+	
+	if (a &lt; 10)
+	okok;
+	
+	</content>
+</book>

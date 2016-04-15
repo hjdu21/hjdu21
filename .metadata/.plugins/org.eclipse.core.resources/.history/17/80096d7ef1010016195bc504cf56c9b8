@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- version을 attribute라 부름. 맨앞xml은 element=tag라 부름. 
+	 루트 앨리먼트는 1개여야 한다.
+	 root element?
+	 => 가장 바깥쪽 엘리먼트. -->
+<book>
+</book>
+<book>
+</book>

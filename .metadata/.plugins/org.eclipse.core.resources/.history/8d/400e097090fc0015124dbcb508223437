@@ -1,0 +1,42 @@
+package designpattern.aubstractfactory;
+
+import java.util.Scanner;
+
+public class Game {
+  Scanner keyScan = new Scanner(System.in);
+
+  public void service() throws Exception {
+    selectRace();
+    
+    String command = null;
+    do {
+      command = keyScan.nextLine().toLowerCase();
+      if(command.equals("home")) {
+        doHome();
+      }else {
+        System.out.println("유효하지 않은 명령어 입니다.");
+      }
+    } while(!command.equals("quit"));
+    System.out.println("게임 종료");
+  }
+  
+  private void doHome() {
+
+    
+  }
+
+  private void selectRace() { 
+    System.out.println("1) 인간족, 2) 외계족, 3) 괴물족");
+    System.out.print("종족을 선택하시오?  ");
+    String race = Integer.parseInt(keyScan.nextLine());
+    
+    if
+    
+  }
+  
+  public static void main(String[] args) throws Exception {
+    Game game = new Game();
+    game.service();
+  }
+
+}

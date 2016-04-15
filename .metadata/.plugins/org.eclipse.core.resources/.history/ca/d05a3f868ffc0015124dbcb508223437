@@ -1,0 +1,12 @@
+package designpattern.aubstractfactory;
+
+import java.util.Scanner;
+
+public class Game {
+
+  public static void main(String[] args) {
+      Scanner keyScan = new Scanner(system.in);
+
+  }
+
+}

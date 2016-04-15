@@ -1,0 +1,30 @@
+package step29.exam05;
+
+import java.sql.Connection;
+import java.util.ArrayList;
+
+public class DataSource {
+
+  //커넥션 객체를 담을 그릇 준비
+  ArrayList<Connection> connectionPool = new ArrayList<>();
+  
+  //객체를 생성하는데 필요한 정보 보관
+  String jdbcDriver;
+  String jdbcUrl;
+  String username;
+  String password;
+  
+  public DataSource(String jdbcDriver, String jdbcUrl, String username, String password) {
+    this.jdbcDriver = jdbcDriver;
+    this.jdbcUrl = jdbcUrl;
+    this.username = username;
+    this.password = password;
+  }
+  
+  public Connection getConnection() throws Exception {
+    if(connectionPool.size() > 0) {
+      return connectionPool.remove(0);
+    }
+  }
+  
+}

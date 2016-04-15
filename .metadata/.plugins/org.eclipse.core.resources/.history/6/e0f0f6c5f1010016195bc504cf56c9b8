@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 시작 태그와 끝태그는 항상 짝을 이루어야 한다. -->
+
+<book>
+	<title>Java programming</title>
+</book>

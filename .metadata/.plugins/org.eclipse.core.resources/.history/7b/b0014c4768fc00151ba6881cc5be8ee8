@@ -1,0 +1,9 @@
+package step29.exam05;
+
+public class DataSource {
+
+  //커넥션 객체를 담을 그릇 준비
+  ArrayList<Connection> list = new ArrayList<>();
+  
+  
+}

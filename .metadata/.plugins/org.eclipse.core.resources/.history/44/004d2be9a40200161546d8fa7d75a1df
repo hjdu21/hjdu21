@@ -1,0 +1,12 @@
+package step32.sax;
+
+public class Test01 {
+
+  public static void main(String[] args) throws Exception {
+    
+    SAXParserFactory spf = SAXParserFactory.newInstance();
+    spf.setNamespaceAware(true);
+    SAXParser saxParser = spf.newSAXParser();
+  }
+
+}

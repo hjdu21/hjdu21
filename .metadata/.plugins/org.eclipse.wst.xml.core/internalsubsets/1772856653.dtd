@@ -1,0 +1,14 @@
+
+ <!ELEMENT books (press+,book*)+>
+ <!ELEMENT book (press,price,author*,)>
+ <!ATTLIST book
+ 	title CDATA #REQUIRED
+ 	content CDATA #IMPLIED
+ 	location (local|foreign) "local"
+ 	type CDATA #FIXED "paper"
+  	press CDATA #REQUIRED
+ 	
+ >
+ <!ELEMENT press (#PCDATA)>
+ <!ELEMENT price (#PCDATA)>
+ <!ELEMENT author (#PCDATA)>

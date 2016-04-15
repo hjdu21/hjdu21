@@ -1,0 +1,53 @@
+//#Collection ArrayList =>익명 중첩클래스 적용
+package step21;
+
+import java.util.Date;
+import java.util.ArrayList;
+import java.util.Comparator;
+
+public class Exam05 {
+  static void printList(ArrayList<String> list) {
+    System.out.println("===================");
+    for (String element : list) {
+      System.out.println(element);
+    }
+  }
+  public static void main(String[] args) {
+    //main()메서드에서만 사용할 클래스라면 로컬 중첩 클래스로 만들어라!
+    class MyComparator implements Comparator<String> {
+      @Override
+      public int compare(String s1, String s2) {
+        return s1.toLowerCase().compareTo(s2.toLowerCase());
+      }
+    }
+    ArrayList<String> list = new ArrayList<>();
+    list.add("111");
+    list.add("aaa");
+    list.add("444");
+    list.add("bbb");
+    list.add("222");
+    list.add("333");
+    list.add("aab");
+    list.add("Aac");
+    //정렬 전
+    printList(list);
+    //정렬 후
+    //list.sort(정렬을 판단하는 객체);
+    MyComparator comp = new MyComparator();
+    list.sort(comp);
+
+    printList(list);
+  }
+}
+/*
+#문제? 이 코드를 유지보수하는 사람은 도대체 MyComparator가 어떤일을 하는
+클래스 인지 궁금하다. 그래서 이 사람은 위로 스크롤하여 클래스 코드를 확인
+할 것이다. 확인한 다음에 다시 위치로 돌아와서 이 코드의 의미를 이해하려고
+노력할 것이다.
+#해결책? 관련된 코드는 가까이 두어라!
+
+#문제? MyComparator객체를 오직 한 개만 만든다.
+
+#위의 두개의 문제를 한꺼번에 해결하는 방법?
+#익명 중첩 클래스
+*/

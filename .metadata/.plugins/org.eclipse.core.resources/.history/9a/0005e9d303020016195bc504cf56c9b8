@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML 엘리먼트 작성 규칙 정의하기
+   1) 엘리먼트 정의하기 
+   <!ELEMENT 태그명 (콘텐츠 규칙)>
+   
+   2) #PCDATA - (Parsed Character Data)
+   =>콘텐츠가 문자열이어야 함을 선언한다.
+   만약, XML파서가 분석 했을때 다른 엘리먼트 (태그)가 있다면 오류 발생한다.
+   위에 무슨말?
+   콘텐츠 안에 태그가 있으면 그 태그 또한 XML 규칙을 준수하는지 검사한다는 뜻이다.
+   -->
+<!DOCTYPE books [
+ <!ELEMENT books (#PCDATA)>
+]>
+
+<books>
+	자바 프로그래밍, 자바 기초 문법에 대한 책이다, 비트출판사, 32000원
+	<p>dad</p>
+</books>

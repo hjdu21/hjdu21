@@ -1,0 +1,31 @@
+package step32.exam01.bit;
+
+public class CarFactoryImpl extends CarFactory {
+  private CarFactoryImpl() { }
+  static CarFactoryImpl instance;
+  public static CarFactoryImpl newInstance() {
+    if(instance == null) {
+      instance = new CarFactoryImpl();
+    }
+    return instance;
+  }
+  
+  public Car newCar(String name) {
+    Car c = new Car();
+    
+    switch (name) {
+    
+    case "tico" :
+      c.model = "티코";
+      c.cc = 800; 
+      return c;
+      
+    case "sonata" :
+      c.model = "소나타";
+      c.cc = 1997;
+      return c;
+    default : return null;
+    
+    }
+  }
+}

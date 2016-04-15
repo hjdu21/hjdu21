@@ -1,0 +1,13 @@
+1. MySQL 클라이언트 실행.
+> mysql -u java80 -p
+
+2-1. 사용가능한 DB목록.
+> show databases;
+
+2-2. 사용할 DB 선택.
+> use java80db;
+
+3. DB에 존재하는 테이블 목록.
+> show tables;
+
+4. table 생성하기.

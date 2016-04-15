@@ -1,0 +1,13 @@
+package designpattern.aubstractfactory;
+
+public class MonsterHomeFactory {
+  public Home createHome() {
+    
+    Home h = new Home();
+    h.image = "alien.home.gif";
+    h.defense = 70;
+    h.attack = 100;
+    
+    return h;
+  }
+}

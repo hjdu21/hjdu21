@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML 엘리먼트 작성 규칙 정의하기
+   1) 엘리먼트 정의하기 
+   <!ELEMENT 태그명 (콘텐츠 규칙)>
+   
+   2) #PCDATA
+   =>콘텐츠가 문자열임을 선언한다.
+   단, XML파서가 분석을 하는 문자열이다.
+   위에 무슨말?
+   콘텐츠 안에 태그가 있으면 그 태그 또한 XML 규칙을 준수하는지 검사한다는 뜻이다.
+   -->
+<!DOCTYPE books [
+ <!ELEMENT books (#PCDATA)>
+]>
+
+<books>
+	<book>
+		<title>Java programming</title>
+		<content> 자바 기초 문법에 대한 설명입니다. </content>
+		<press>비트출판</press>
+		<price>32000</price>
+	</book>
+
+	<book>
+		<caption>Java programming</caption>
+		<content> 자바 기초 문법에 대한 설명입니다. </content>
+		<press>비트출판</press>
+		<price>32000</price>
+	</book>
+	
+	
+</books>

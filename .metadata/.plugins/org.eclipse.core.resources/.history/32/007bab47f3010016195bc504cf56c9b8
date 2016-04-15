@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 태그 이름은 대소문자를 구분한다..
+	 태그 이름에 공백을 넣을 수 없다. -->
+
+<book>
+	<title>Java programming</title>
+	<Author> 오류다. </author>
+	<first-name>오류</first-Name>
+</book>

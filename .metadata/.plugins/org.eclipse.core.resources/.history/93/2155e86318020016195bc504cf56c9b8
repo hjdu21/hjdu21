@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+ <!ENTITY pre2 "출판사">
+ <!ENTITY % cattr "CDATA #REQUIRED">
+ 
+ <!ELEMENT books (press+,book*)>
+ <!ELEMENT book (press,price,author*,)>
+ <!ATTLIST book
+ 	title CDATA #REQUIRED
+ 	content CDATA #IMPLIED
+ 	location (local|foreign) "local"
+ 	type CDATA #FIXED "paper"
+  	press CDATA #REQUIRED
+ 	
+ >
+ <!ELEMENT press (#PCDATA)>
+ <!ELEMENT price (#PCDATA)>
+ <!ELEMENT author (#PCDATA)>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CDATA 섹션
+   => character data 덩어리를 쉽게 표현하기.
+     -->
+
+<book>
+	<title>조건</title>
+	<content>
+	<![CDATA][ 
+ 	  int a = 10;
+ 	  if (a < 19) {
+ 	   System.out.println("청소년");
+ 	  } else if(a >= 19 && a < 61) { 
+ 	   System.out.println("성인");
+ 	  }
+ 	  ]]>
+	
+	</content>
+</book>

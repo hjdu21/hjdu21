@@ -1,0 +1,5 @@
+package designpattern.aubstractfactory;
+
+public class AlienHomeFactory {
+
+}

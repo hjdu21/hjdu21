@@ -1,0 +1,18 @@
+package designpattern.builder.exam02;
+
+public class CarFactoryBuilder {
+ public CarFactory build(String blueprint) {
+   //blueprint ==== "key, model, cc; key,model,cc" 형식임.
+   String[] carinfos = blueprint.split(",");
+   
+   for(String carinfo : carinfos) {
+     
+   }
+   
+ }
+ 
+ private Car generate(String carinfo) {
+   // carinfo ===== "key,model,cc" 형식
+ }
+ 
+}

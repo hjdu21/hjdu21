@@ -1,0 +1,40 @@
+/* 주제 : 컬럼의 타입 */
+
+
+
+1. char(n) 타입의 특징
+=> n은 컬럼의 고정 크기 (n보다 작은 개수의 문자열을 넣더라도 무조건 n개의 크기를 차지한다.)
+=> 문자열을 넣을 때 최대 n개수를 넣을 수 있다.
+=> 컬럼의 크기가 고정되어있기 때문에,  검색 할 때 데이터를 찾기 쉬우며 속도가 빠르다.
+   그러나, 문제점은 문자열의 개수가 적더라도 같은 크기를 갖기 때문에 메모리 낭비가 있다.
+
+ drop table test01;
+ create table test01 ( 
+ tno int primary key,
+ name char(5) default '홍길동',
+ email char(20) unique
+);
+
+
+
+2. varchar(n) 타입의 특징.
+=> variable character 의 약자로서, 가변 크기를 갖는다.
+=> 따라서, 최대 n개의 문자열을 넣을 수 있다. 문자열 크기만큼 컬럼의 크기가 결정된다.
+=> 값을 넣는 개수만큼 메모리를 사용하기 때문에, 메모리가 절약된다.
+   메모리의 크기가 가변적이기 때문에 값을 찾는데 시간이 char 보다 더 걸린다.
+
+ drop table test01;
+ create table test01 ( 
+ tno int primary key,
+ name varchar(5) default '홍길동',
+ email varchar(20) unique
+);
+
+3. char(255), varchar(65535) 까지.
+
+ drop table test01;
+ create table test01 ( 
+ tno int primary key,
+ email varchar(20) unique not null,
+ name varchar(20) not null
+);

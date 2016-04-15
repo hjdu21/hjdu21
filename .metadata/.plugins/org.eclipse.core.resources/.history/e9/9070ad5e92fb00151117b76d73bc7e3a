@@ -1,0 +1,31 @@
+// 주제 : 데이터 삭제하기 - delete문 보내기
+package step28;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+public class test12 {
+
+  public static void main(String[] args) throws Exception {
+    Connection con = null;
+    Statement stmt = null;
+    try{
+    Class.forName("com.mysql.jdbc.Driver");
+
+      con = DriverManager.getConnection("jdbc:mysql://localHost:3306/java80db",
+                                             "java80", "1111");
+      stmt = con.createStatement();
+      
+      int count = stmt.executeUpdate("delete MEMBERS where no in(6,7)");
+      
+        System.out.printf("삭제 개수 : %d",count);
+      
+      } finally {
+      try { stmt.close(); } catch (Exception e) {} // 각각닫아야함.
+      try { con.close(); } catch (Exception e) {}
+    } 
+  }}
+
+/* 
+  */

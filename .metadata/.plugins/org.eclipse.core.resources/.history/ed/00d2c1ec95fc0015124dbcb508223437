@@ -1,0 +1,7 @@
+package designpattern.builder.exam01;
+
+public class CarInfo {
+  String key;
+  String model;
+  int    cc;
+}

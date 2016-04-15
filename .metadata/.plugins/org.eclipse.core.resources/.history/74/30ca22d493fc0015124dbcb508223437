@@ -1,0 +1,5 @@
+package designpattern.aubstractfactory.exam02;
+
+public class HomeFactory {
+
+}

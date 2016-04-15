@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 속성
+   => 데이터의 부가 정보를 표현할 때 사용
+     -->
+
+<book>
+	<title>Java programming</title>
+	<content> 
+	</content>
+</book>

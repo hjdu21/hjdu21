@@ -1,0 +1,6 @@
+package designpattern.aubstractfactory.exam02;
+
+public abstract class HomeFactory {
+  public abstract Home createHome();
+
+}

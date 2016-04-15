@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 속성
+   => 데이터의 부가 정보를 표현할 때 사용
+     -->
+
+<book lang="korean" page="780" width="17cm" height="23cm">
+	<title>Java programming</title>
+	<content> 자바 기초 문법에 대한 설명입니다. </content>
+	<press>비트출판</press>
+	<price>32000원</price>
+</book>

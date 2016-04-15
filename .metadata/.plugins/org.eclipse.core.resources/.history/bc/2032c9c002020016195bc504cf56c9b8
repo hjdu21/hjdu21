@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 속성
+   => 데이터의 부가 정보를 표현할 때 사용
+   => 실무에서는 구분하지 않고 편한 방법을 사용한다.
+-->
+<books>
+	<book>
+		<title>Java programming</title>
+		<content> 자바 기초 문법에 대한 설명입니다. </content>
+		<press>비트출판</press>
+		<price>32000</price>
+	</book>
+
+	<book>
+		<caption>Java programming</caption>
+		<content> 자바 기초 문법에 대한 설명입니다. </content>
+		<press>비트출판</press>
+		<price>32000</price>
+	</book>
+	
+	
+</books>

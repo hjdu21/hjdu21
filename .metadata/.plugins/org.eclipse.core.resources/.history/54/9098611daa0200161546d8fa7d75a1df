@@ -1,0 +1,26 @@
+package designpattern.singleton;
+
+
+public class Test01 {
+
+  public static void main(String[] args) {
+    CarFactory factory = CarFactory.newInstance();
+    CarFactory factory2 = CarFactory.newInstance();
+    CarFactory factory3 = CarFactory.newInstance();
+    
+    if(factory == factory2 && factory == factory3) {
+      System.out.println("factory와 factory2와 factory3은 같은 인스턴스다. ");
+    }
+    
+    Car c1 = factory.newCar("tico");
+    
+    Car c2 = factory.newCar("sonata");
+   
+  
+  }
+
+}
+
+/* 
+
+*/

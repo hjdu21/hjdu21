@@ -1,0 +1,36 @@
+package step32.dom;
+
+import java.io.File;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+
+public class Test01 {
+  
+  public static void main(String[] args) throws Exception {
+    
+    // 1) DocumentBuilder 공장을 준비한다.
+    DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+    System.out.println(dbf.getClass().getName());
+  
+    // 2) 공장으로부터 DocumentBuilder 객체를 생성한다.
+    DocumentBuilder db = dbf.newDocumentBuilder(); 
+    
+    // 3) xml 파일을 분석하여, DOM 객체 Tree를 만든다.
+    Document doc = db.parse(new File("./Sample.xml"));
+    
+    // 4) DOM 트리에서 원하는 태그를 꺼낸다.
+    doc.getElementsByTagName("book");
+  }
+}
+
+
+
+
+
+
+
+
+

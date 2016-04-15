@@ -1,0 +1,56 @@
+/* 주제 : not null */
+
+1. 테이블 생성하기.
+create table test01 (
+ tno int,
+ name char(5)
+);
+
+
+2. 값 입력.
+
+/* 컬럼을 지정하지 않는 경우.
+ * create table에 선언된 순서대로 모든 컬럼의 값을 지정해야한다. */
+insert into test01 value(1,'hong');
+/* 순서대로 안하면 tno 값이 0이된다 */
+
+/* 정상 저장. */
+insert into test01 value(2,'park');
+
+insert into test01(name,tno) value('lee',3);
+insert into test01(name,tno) value('kim',4);
+insert into test01(name,tno) value('cho',5);
+insert into test01(name,tno) value('choi',6);
+
+
+6. 값 꺼내기
+select * from 테이블명;
+select 컬럼명,컬럼명... from 테이블명;
+
+ex) 
+select * from test01;
+
+7. 값 변경하기
+update 테이블명 set 컬럼명=값,컬럼명=값,... where 조건;
+
+ex)
+update test01 set name='오호라' where tno=3;
+
+
+8. 값 삭제하기.
+delete from 테이블명 where 조건;
+
+ex)
+delete from test01 where tno=3;
+
+9. 테이블 삭제하기.
+drop table 테이블명;
+
+drop table test01;
+
+
+
+
+
+
+

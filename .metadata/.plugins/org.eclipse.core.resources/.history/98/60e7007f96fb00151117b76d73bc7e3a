@@ -1,0 +1,7 @@
+package step29.exam02;
+
+public class MemberDao {
+ public List<Member> selectList() {
+   ArrayList<Member> list = new ArrayList<>();
+ }
+}

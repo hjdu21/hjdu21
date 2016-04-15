@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML 엘리머트 작성 규칙 정의하기! -->
+<!DOCTYPE books [
+
+]>
+<books>
+	<book>
+		<title>Java programming</title>
+		<content> 자바 기초 문법에 대한 설명입니다. </content>
+		<press>비트출판</press>
+		<price>32000</price>
+	</book>
+
+	<book>
+		<caption>Java programming</caption>
+		<content> 자바 기초 문법에 대한 설명입니다. </content>
+		<press>비트출판</press>
+		<price>32000</price>
+	</book>
+	
+	
+</books>

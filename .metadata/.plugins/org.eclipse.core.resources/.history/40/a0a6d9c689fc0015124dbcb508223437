@@ -1,0 +1,5 @@
+package designpattern.command.factoryMethod.exam02;
+
+public class CarFactory {
+
+}

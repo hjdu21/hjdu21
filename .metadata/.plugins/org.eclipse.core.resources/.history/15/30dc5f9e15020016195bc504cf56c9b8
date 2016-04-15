@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML namespace -->
+
+<books>
+	<press>
+		<name>비트출판사</name>
+		<tel>111-1111</tel>
+	</press>
+
+	<author>
+		<name>홍길동저자</name>
+		<tel>111-1111</tel>
+	</author>
+
+	<book>
+		<!-- 자식 엘리먼트 작성 시 주의사항. => 순서를 지켜라! 콤마(,)로 나열 된 순서대로 작성해야한다. => 개수를 반드시 
+			지켜라! -->
+		<title>자바 프로그래밍</title>
+		<content>자바 기초 문법에 대한 책이다</content>
+		<price>32000</price>
+		<name>비트출판사</name>
+		<name>홍길동</name>
+
+	</book>
+
+
+</books>

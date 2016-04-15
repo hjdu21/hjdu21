@@ -1,0 +1,20 @@
+//주제 : 팩토리 메서드 적용.
+package designpattern.command.factoryMethod.exam02;
+
+
+public class Test01 {
+
+  public static void main(String[] args) {
+    
+    CarFactory factory = new CarFactory();
+    
+    //티코 객체 생성.
+    Car c1 = factory.createCar("tico");
+    
+    //소나타 객체 생성
+    Car c2 = factory.createCar("sonata");
+   
+  
+  }
+
+}

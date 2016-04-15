@@ -1,0 +1,30 @@
+package step32.sax;
+
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+
+import org.xml.sax.XMLReader;
+
+public class Test01 {
+
+  public static void main(String[] args) throws Exception {
+    
+    //1) SAXParser 공장을 준비한다.
+    SAXParserFactory spf = SAXParserFactory.newInstance();
+    System.out.println(spf.getClass().getName());
+    
+    //2) SAXParser의 네임스페이스 인지 가능 여부를 지정한다.
+    spf.setNamespaceAware(true);
+    
+    //3) SAXParserFactory를 통하여 SAXParser를 생성한다.
+    SAXParser saxParser = spf.newSAXParser();
+    
+    //4) SAXParser를 읽어들일 객체를 불러온다.
+    XMLReader xmlReader = saxParser.getXMLReader();
+    
+    //5) XML 파일을 읽어서 분석하라!
+    //-> 아규먼트는 file:/경로 형식으로 표현된 fileURL 이어야 한다.
+    xmlReader.parse(input);
+
+  }
+}

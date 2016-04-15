@@ -1,0 +1,11 @@
+package designpattern.builder.exam02;
+
+import designpattern.builder.exam01.CarFactory;
+
+public class CarFactoryBuilder {
+ public CarFactory build(String blueprint) {
+   //blueprint "key, model, cc" 형식임.
+   for()
+   
+ }
+}

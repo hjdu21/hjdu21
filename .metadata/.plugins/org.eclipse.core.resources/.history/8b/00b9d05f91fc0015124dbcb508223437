@@ -1,0 +1,13 @@
+package designpattern.aubstractfactory;
+
+public class Home {
+  String image;
+  int defense;
+  int attack;
+  @Override
+  public String toString() {
+    return "Home [image=" + image + ", defense="
+                + defense + ", attack=" + attack + "]";
+  }
+}
+

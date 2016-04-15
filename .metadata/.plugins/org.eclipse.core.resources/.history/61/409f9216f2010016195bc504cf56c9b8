@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 이름은 반드시 문자와 _로 시작한다.
+     물론 중간에 -와 숫자가 올 수 있ㄷ. -->
+
+<book>
+	<title>Java programming</title>
+	<local><local/>
+	<local/>
+</book>

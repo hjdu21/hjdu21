@@ -1,0 +1,31 @@
+package step28;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import com.mysql.jdbc.Driver;
+
+public class Test01 {
+
+  public static void main(String[] args) throws Exception {
+    DriverManager.deregisterDriver(new Driver());
+    
+    Connection con = DriverManager.getConnection(
+        "jdbc:mysql://localhost:3306/java80db?user=java80&password=1111");
+    System.out.println("연결 성공!");
+    con.close();
+  }
+
+}
+
+
+/* JDBC API
+ - DBMS와 연동할 때 사용하는 도구들의 규약
+ - 이 규약에 따라 DBMS 벤더는 클래스를 작성하여 배포한다.
+  ==> 이렇게 배포된것을 "JDBC Driver"라고 부른다.
+ - 주요 규약.
+ 1) java.sql.Driver 인터페이스
+ => JDBC 드라이버 정보를 다루는 클래스가 지켜야할 규칙.
+ => DBMS와 커넥션을 다루는 기능.
+ * 
+ * */

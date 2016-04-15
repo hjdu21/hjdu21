@@ -1,0 +1,23 @@
+package step32.exam01;
+
+import designpattern.singleton.Car;
+import designpattern.singleton.CarFactory;
+
+public class Test01 {
+
+  public static void main(String[] args) throws Exception {
+    // CarFactory 추상클래스안의 스테틱 메서드를 호출할 수 있다.
+    CarFactory factory = CarFactory.newInstance();
+    System.out.println(factory.getClass().getName());
+    
+    Car c1 = factory.newCar("tico");
+    Car c2 = factory.newCar("sonata");
+   
+  
+  }
+
+}
+
+/* 
+
+*/
